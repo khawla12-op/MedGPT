@@ -1,0 +1,8 @@
+.env
+static/Store/
+static/Yolo/
+static/message_images/
+staticfiles/Store/
+staticfiles/Yolo/
+staticfiles/message_images/
+__pycache__/

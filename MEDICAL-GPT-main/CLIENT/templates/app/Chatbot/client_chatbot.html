@@ -1,0 +1,45 @@
+{% extends 'app/base_app.html' %}
+{% load static %}
+{% block content %}
+<div class="container-">
+  <div class="row justify-content-center" >
+    <div class="col">
+      <div class="chat">
+        <div class="chat-body ">
+          <div class="messages" id="message-body">
+          </div>
+          <div class="row mt-4">
+            <div class="col">
+              <form action="#">
+                <div class="card">
+                  <div class="card-body text-center">
+                    <div class="input-group mt-4" id="send_message">
+                      <input id="message" type="text" class="form-control" placeholder="Send A Message ..." aria-label="Username" aria-describedby="basic-addon1">
+                      <span class="input-group-text" id="basic-addon1">
+                        <button class="btn btn-primary btn-floating" type="submit"> 
+                          <i class="bi bi-send" id="send"></i>
+                        </button>
+                      </span>
+                      <span class="input-group-text" id="basic-addon1">
+                        <button class="btn btn-primary btn-floating" id="voice_record" type="submit"> 
+                          <i class="bi bi-mic-fill"></i>
+                        </button>
+                      </span>
+                      <span class="input-group-text" id="basic-addon1">
+                        <label class="btn btn-primary btn-floating" for="file-input">
+                          <i class="bi bi-file-arrow-down-fill"></i>
+                          <input id="file-input" type="file" style="display: none;">
+                        </label>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}  
