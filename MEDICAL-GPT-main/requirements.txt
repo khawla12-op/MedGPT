@@ -1,4 +1,4 @@
-Django==3.2.16
+Django==3.2.24
 llama_index==0.6.8
 torch==2.0.1
 whitenoise==6.2.0
