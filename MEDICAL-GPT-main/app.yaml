@@ -1,0 +1,13 @@
+
+runtime: python310
+entrypoint: gunicorn -b :$PORT MedGPT.wsgi:application
+
+env_variables:
+  OPENAI_API_KEY: "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"
+
+handlers:
+- url: /static
+  static_dir: static
+
+- url: /.*
+  script: auto

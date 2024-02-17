@@ -126,3 +126,4 @@ STATIC_ROOT = os.path.join(SITE_ROOT, 'staticfiles')
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+ALLOWED_HOSTS = ['medgpt-413222.de.r.appspot.com','127.0.0.1']
